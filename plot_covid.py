@@ -62,6 +62,7 @@ if entries == 0:
 	sys.exit('No countries found!')
 
 ax.set_ylim(-0.05,upper_ylim)
+ax2.set_ylim(-(0.05 / upper_ylim)*100,100)
 ax.legend(loc='center left', bbox_to_anchor=(1.2, 0.5))
 lin1, = plt.plot([],[],linestyle='solid',label='Left y-axis',color='black')
 y_legend_left = plt.legend(handles = [lin1],loc='upper left')
